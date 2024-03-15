@@ -1,0 +1,23 @@
+.class-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 480px;
+  width: 100%;
+}
+.class-hero img {
+  width: 141px;
+  height: 141px;
+}
+.class-hero h1 {
+  font-weight: 500;
+  font-size: 48px;
+  color: #ffffff;
+}
+@media screen and (max-width: 430px) {
+  .class-hero h1 {
+    font-size: 35px;
+  }
+}

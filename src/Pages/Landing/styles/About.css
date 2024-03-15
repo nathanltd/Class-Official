@@ -1,0 +1,63 @@
+.about {
+  margin-top: -420px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  isolation: isolate;
+}
+
+.about>img {
+  position: absolute;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.about .book {
+  right: 0;
+  top: 0%;
+}
+
+.about .trophy {
+  left: 0;
+  bottom: 0%;
+}
+
+.about .max-cont {
+  gap: 90px;
+}
+
+.about h1 {
+  font-weight: 500;
+  font-size: 48px;
+  color: #252525;
+  margin-bottom: 50px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 1285px) {
+  .about {
+    margin-top: 100px;
+  }
+
+  .about .max-cont {
+    gap: 30px;
+  }
+
+  .about .book {
+    top: 0%;
+  }
+
+  .about .trophy {
+    bottom: 30%;
+  }
+}

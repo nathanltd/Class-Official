@@ -1,0 +1,139 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: #ffa24d;
+  padding: 100px 0px;
+  margin-top: 100px;
+  isolation: isolate;
+}
+.contact .max-cont {
+  flex-direction: row;
+  gap: 70px;
+}
+.contact form {
+  display: flex;
+  /*justify-content: center;
+  align-items: center;*/
+  width: 100%;
+  max-width: 624px;
+  padding: 50px 58px;
+  flex-direction: column;
+  gap: 0px;
+  background-color: white;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+.contact form input,
+.contact form select,
+.contact form textarea {
+  height: 56px;
+  border-radius: 8px;
+  background-color: transparent;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #a7a7a7;
+  border: 1px solid #d3d3d3;
+  padding-inline: 20px;
+}
+.contact form textarea {
+  padding-top: 20px;
+  height: 120px;
+  resize: none;
+}
+
+.contact form button {
+  width: 100%;
+  max-width: 284px;
+  font-weight: 500;
+  font-size: 16px;
+  height: 50px;
+  background-color: #ffa24d;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+.contact form .disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 60px;
+}
+.contact-info h2 {
+  font-weight: 500;
+  font-size: 48px;
+  color: white;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+}
+.girl {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.input-title{
+  line-height: 0px;
+  color:#a7a7a7;
+  font-size: 14px;
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 10px;
+  position: absolute;
+  height: 15px;
+}
+.input-div{
+  margin-bottom: 30px;
+}
+.button-div{
+  width: 100%;
+  text-align: center;
+}
+.text-black{
+  color: black!important;
+}
+@media screen and (max-width: 1037px) {
+  .contact .max-cont {
+    flex-direction: column-reverse;
+  }
+  .contact-info h2 {
+    font-size: 30px;
+  }
+  .contacts a {
+    font-size: 16px;
+  }
+  .girl {
+    display: none;
+  }
+}
+@media screen and (max-width: 520px) {
+  .contact form {
+    padding: 50px 20px;
+  }
+}

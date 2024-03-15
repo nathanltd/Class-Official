@@ -1,0 +1,124 @@
+.products {
+  width: calc(100% - 20px);
+  max-width: 1740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  background: #fff4ea;
+  border-radius: 48px;
+  padding: 144px;
+  transform: translateY(-600px);
+}
+.products h3 {
+  font-weight: 500;
+  color: #e87a16;
+  font-size: 32px;
+}
+.products h2 {
+  font-weight: 500;
+  font-size: 48px;
+  color: #252525;
+}
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+  width: 100%;
+  margin-top: 70px;
+}
+.product-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  padding: 64px 24px 44px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  max-width: 378.67px;
+}
+.product-box img {
+  width: 154px;
+  object-fit: contain;
+}
+.product-box h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: inherit;
+}
+.product-box p {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--gray);
+}
+.product-box a {
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  align-items: center;
+  text-decoration: none;
+  margin-top: auto;
+}
+.product-row .product-box:nth-child(1) {
+  color: var(--green);
+}
+.product-row .product-box:nth-child(1) a {
+  background-color: var(--green);
+}
+.product-row .product-box:nth-child(2) {
+  color: var(--orange);
+}
+.product-row .product-box:nth-child(2) a {
+  background-color: var(--orange);
+}
+.product-row .product-box:nth-child(3) {
+  color: var(--purple);
+}
+.product-row .product-box:nth-child(3) a {
+  background-color: var(--purple);
+}
+.text-left{
+  text-align: left;
+}
+@media screen and (max-width: 1285px) {
+  .products {
+    transform: none;
+    padding: 60px;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .products {
+    gap: 20px;
+  }
+  .products h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .products h3 {
+    font-size: 20px;
+  }
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .products {
+    padding: 60px 20px;
+  }
+  .products h2 {
+    font-size: 25px;
+  }
+}

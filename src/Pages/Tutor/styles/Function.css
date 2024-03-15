@@ -1,0 +1,72 @@
+.func {
+  padding: 100px 0px;
+  padding-bottom: 0px;
+}
+.func h1 {
+  margin-bottom: 150px;
+}
+.func-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  gap: 140px;
+}
+.func-row:not(:last-of-type) {
+  margin-bottom: 200px;
+}
+.func-row:last-child img {
+  order: 2;
+}
+.func-row h2 {
+  color: var(--orange);
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+.func-row p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+}
+@media screen and (max-width: 1232px) {
+  .func-row {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .func-row {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .func-row:last-child img {
+    order: 0;
+  }
+  .func-row h2 {
+    margin-bottom: 20px;
+  }
+  .func-row:not(:last-of-type) {
+    margin-bottom: 140px;
+  }
+}
+@media screen and (max-width: 662px) {
+  .func-row img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .func h1 {
+    margin-bottom: 80px;
+  }
+  .func-row {
+    text-align: left;
+  }
+  .func-row h2 {
+    font-size: 25px;
+  }
+  .func-row p {
+    font-size: 14px;
+  }
+  .func-row:not(:last-of-type) {
+    margin-bottom: 100px;
+  }
+}
