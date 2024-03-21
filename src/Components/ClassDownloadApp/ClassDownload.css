@@ -1,0 +1,59 @@
+.download-block {
+  width: 100%;
+  background-color: var(--green);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  min-height: 200px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h2 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.header h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.download-block button {
+  background-color: #037f9a;
+}
+
+.download-block .btn-div {
+  gap: 30px;
+}
+
+.download-block .btn-div button {
+  padding-inline: 20px;
+}
+
+.download-margin {
+  margin-right: 20px;
+}
+
+.downlaod-img-block {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.downlaod-img-block .downlaod-img {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.downlaod-img-block .end-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
