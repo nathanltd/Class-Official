@@ -58,6 +58,13 @@
   border-radius: 8px;
   border: none;
 }
+
+.contact form button:disabled {
+  background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+  color: light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+  border-color: light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+}
+
 .contact form .disabled {
   background: #d3d3d3;
   cursor: not-allowed;
@@ -97,9 +104,9 @@
   right: 0;
   z-index: -1;
 }
-.input-title{
+.input-title {
   line-height: 0px;
-  color:#a7a7a7;
+  color: #a7a7a7;
   font-size: 14px;
   background-color: white;
   padding-left: 4px;
@@ -108,15 +115,15 @@
   position: absolute;
   height: 15px;
 }
-.input-div{
+.input-div {
   margin-bottom: 30px;
 }
-.button-div{
+.button-div {
   width: 100%;
   text-align: center;
 }
-.text-black{
-  color: black!important;
+.text-black {
+  color: black !important;
 }
 @media screen and (max-width: 1037px) {
   .contact .max-cont {

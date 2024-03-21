@@ -17,6 +17,7 @@ const BookStore = () => {
           head2={"趕快來獲得更多你不知道的有趣知識吧！"}
           btnText={"立即前往"}
           btnColor={["#8C9EFF", null]}
+          actionUrl={"https://ebook.weclass.com.tw"}
         />
       </div>
     </div>

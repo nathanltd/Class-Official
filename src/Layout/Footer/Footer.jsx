@@ -1,8 +1,29 @@
 import "./Footer.css";
 //React Router
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const go = (path) => {
+    if (location.pathname === '/') {
+      goView(path);
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        goView(path);
+      }, 900);
+    }
+  };
+
+  const goView = (path) => {
+    let anchorElement = document.getElementById(path);
+    if (anchorElement) {
+      anchorElement.scrollIntoView();
+    }
+  }
+
   return (
     <div className="container foot-wrap">
       <img
@@ -29,9 +50,9 @@ const Footer = () => {
           </div>
           <div className="foot-col">
             <h2>關於 Class</h2>
-            <a href="#about">關於我們</a>
-            <a href="#service">服務與願景</a>
-            <a href="#contact">聯絡我們</a>
+            <a onClick={() => go('about')}>關於我們</a>
+            <a onClick={() => go('service')}>服務與願景</a>
+            <a onClick={() => go('contact')}>聯絡我們</a>
           </div>
           <div className="foot-col">
             <h2>追蹤我們</h2>

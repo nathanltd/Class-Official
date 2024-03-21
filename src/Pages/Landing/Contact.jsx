@@ -2,6 +2,11 @@ import { useState } from "react";
 import MailModal from "../../Components/MailModal/MailModal";
 import "./styles/Contact.css";
 import { Fade } from "react-reveal";
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = "service_zticu8g";
+const TEMPLATE_ID = "template_wizh3dd";
+const PUBLIC_KEY = "QikMgK6ClAXnIbi3o";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,6 +57,43 @@ const Contact = () => {
     }
   };
   */
+
+  const handleSubmit = () => {
+    let tempService = '未選擇';
+    switch (service) {
+      case 'all':
+        tempService = '所有平台服務';
+        break;
+      case 'class':
+        tempService = 'CLASS班級';
+        break;
+      case 'teach':
+        tempService = 'CLASS家教';
+        break;
+      case 'book':
+        tempService = 'CLASS書店';
+        break;
+      default:
+        break;
+    }
+    if (name && (phone || email)) {
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        name, phone, email, school, service: tempService, content
+      }, PUBLIC_KEY).then(() => {
+        setName('');
+        setPhone('');
+        setEmail('');
+        setSchool('');
+        setService('');
+        setContent('');
+        setOpenModal(true);
+      }).catch((e) => {
+        alert('發生錯誤，請聯絡管理員');
+        console.log(e.text);
+      });
+    }
+  }
+
   return (
     <div id="contact" className="contact">
       {openModal && <MailModal closeModal={setOpenModal} />}
@@ -118,7 +160,7 @@ const Contact = () => {
                 onChange={(e) => setService(e.target.value)}
                 className={service !== "" ? "text-black" : ""}
               >
-                <option value="" disabled="true">服務</option>
+                <option value="" disabled={true}>服務</option>
                 <option value="all">所有平台服務</option>
                 <option value="class">CLASS班級</option>
                 <option value="teach">CLASS家教</option>
@@ -129,7 +171,7 @@ const Contact = () => {
               {content !== "" ? <span className="input-title">描述</span> : ""}
               <input
                 onChange={(e) => setContent(e.target.value)}
-                value={content}                
+                value={content}
                 name="content"
                 className={content !== "" ? "text-black" : ""}
                 type="text"
@@ -140,10 +182,11 @@ const Contact = () => {
             <div className="button-div">
 
               <button
+                disabled={!(name && (phone || email))}
                 className={` ""  `}
                 type="submit"
                 value="提交"
-                onClick={() => setOpenModal(true)}
+                onClick={() => handleSubmit()}
               >
                 送出
               </button>
