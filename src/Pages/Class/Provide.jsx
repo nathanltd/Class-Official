@@ -49,6 +49,26 @@ const Provide = () => {
       head: "人事管理",
       desc: "所有班級歷史紀錄皆留存於系統",
     },
+    {
+      img: "/assets/kitchen-utensils 1.png",
+      head: "點餐系統",
+      desc: "餐點紀錄、餐費儲值，以班級為單位分類訂單",
+    },
+    {
+      img: "/assets/image 2.png",
+      head: "班級通訊",
+      desc: "整合家長師生聯絡，不必再使用私人通訊",
+    },
+    {
+      img: "/assets/Frame 3358.png",
+      head: "線上繳費",
+      desc: "家長繳費，馬上入帳，自動通知到帳及沖銷訂單",
+    },
+    {
+      img: "/assets/Frame 3390.png",
+      head: "接送通知",
+      desc: "清楚掌握每位家長的抵達時間",
+    },
   ];
   return (
     <div className="provide">

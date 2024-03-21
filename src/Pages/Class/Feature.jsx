@@ -9,7 +9,7 @@ const Feature = () => {
       </Fade>
       <div className="feature-box">
         <Fade delay={500} left>
-          <img src="/assets/feature1.png" alt="" />
+          <img src="/assets/Frame 3389.png" alt="" />
         </Fade>
         <div className="right-feature-box">
           <h3 className="number">1</h3>
@@ -29,7 +29,7 @@ const Feature = () => {
       </div>
       <div className="feature-box">
         <Fade right>
-          <img src="/assets/feature2.png" alt="" />
+          <img src="/assets/Frame 3388.png" alt="" />
         </Fade>
         <div className="right-feature-box">
           <h3 className="number">2</h3>
@@ -49,7 +49,7 @@ const Feature = () => {
       </div>
       <div className="feature-box">
         <Fade left>
-          <img src="/assets/feature3.png" alt="" />
+          <img src="/assets/Frame 3387.png" alt="" />
         </Fade>
         <div className="right-feature-box">
           <h3 className="number">3</h3>
