@@ -123,4 +123,8 @@
   .right-app h3 {
     font-size: 18px;
   }
+  .store-block .store-btn{
+    display: flex;
+    flex-direction: column;
+  }
 }
