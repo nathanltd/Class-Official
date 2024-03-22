@@ -34,7 +34,7 @@ const ClassDownload = () => {
       <div className="header">
         <Fade duration={700} collapse top>
           <h2>減輕你的管理負擔</h2>
-          <h3>釋放你在班級管理上的一切煩惱</h3>
+          <h3>釋放你在班級管理上的一切煩惱！</h3>
         </Fade>
       </div>
       <div className="btn-div">
