@@ -37,7 +37,7 @@ const Provide = () => {
     {
       img: "/assets/provide-ico (2).png",
       head: "收費財務",
-      desc: "方便老師快速且彈性建立課表",
+      desc: "方便經營者輕鬆掌握財務",
     },
     {
       img: "/assets/provide-ico (6).png",
@@ -47,7 +47,7 @@ const Provide = () => {
     {
       img: "/assets/provide-ico (4).png",
       head: "人事管理",
-      desc: "所有班級歷史紀錄皆留存於系統",
+      desc: "人事專業助手，經營事半功倍",
     },
     {
       img: "/assets/kitchen-utensils 1.png",
