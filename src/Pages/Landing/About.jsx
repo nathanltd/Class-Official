@@ -13,7 +13,7 @@ const About = () => {
         <div>
           <div id="about" className="func-row">
             <Fade left>
-              <img src="/assets/home-photo1.png" alt="" />
+              <img src="/assets/home-photo1-1.png" alt="" />
             </Fade>
             <div>
               <Fade right>
@@ -30,7 +30,7 @@ const About = () => {
           </div>
           <div id="service" className="func-row">
             <Fade right>
-              <img src="/assets/home-photo2.png" alt="" />
+              <img src="/assets/home-photo2-1.png" alt="" />
             </Fade>
             <div>
               <Fade left >

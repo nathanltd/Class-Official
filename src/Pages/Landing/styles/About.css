@@ -9,7 +9,7 @@
   isolation: isolate;
 }
 
-.about>img {
+.about > img {
   position: absolute;
   max-width: 100%;
   z-index: -1;
@@ -44,6 +44,15 @@
   padding-top: 1rem;
 }
 
+.about #about img {
+  width: 585px;
+  height: 100%;
+}
+
+.about #service img {
+  width: 615px;
+  height: 100%
+}
 @media screen and (max-width: 1285px) {
   .about {
     margin-top: 100px;
@@ -59,5 +68,15 @@
 
   .about .trophy {
     bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about #about img {
+    width: 100%;
+  }
+
+  .about #service img {
+    width: 100%;
   }
 }
