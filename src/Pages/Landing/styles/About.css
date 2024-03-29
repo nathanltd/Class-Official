@@ -47,11 +47,13 @@
 .about #about img {
   width: 585px;
   height: 100%;
+  border-radius: 20px;
 }
 
 .about #service img {
   width: 615px;
-  height: 100%
+  height: 100%;
+  border-radius: 20px;
 }
 @media screen and (max-width: 1285px) {
   .about {
